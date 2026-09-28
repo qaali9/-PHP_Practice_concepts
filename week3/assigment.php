@@ -9,34 +9,34 @@
     <?php
     //Question 1
     echo "<h2>Three integer numbers Greatest and smallest</h2>";
-    $number1 = 10;
-    $number2 = 20;
-    $number3 = 30;
+    $num1 = 20;
+    $num2 = 30;
+    $num3 = 40;
     
-    if ($number1 >= $number2 && $number1 >= $number3)
+    if ($num1 >= $num2 && $num1 >= $num3)
     {
-        $greatest = $number1;
+        $greatest = $num1;
     }
-    elseif ($number2 >= $number1 && $number2 >= $number3)
+    elseif ($num2 >= $num1 && $num2 >= $num3)
     {
-        $greatest = $number2;
+        $greatest = $num2;
     }
     else
     {
-        $greatest = $number3;
+        $greatest = $num3;
     }
 
-    if ($number1 <= $number2 && $number1 <= $number3)
+    if ($num1 <= $num2 && $num1 <= $num3)
     {
-        $smallest = $number1;
+        $smallest = $num1;
     }
-    elseif ($number2 <= $number1 && $number2 <= $number3)
+    elseif ($num2 <= $num1 && $num2 <= $num3)
     {
-        $smallest = $number2;
+        $smallest = $num2;
     }
     else
     {
-        $smallest = $number3;
+        $smallest = $num3;
     }
     echo "Greatest number: " . $greatest . "<br>";
     echo "Smallest number: " . $smallest;
@@ -127,7 +127,7 @@ echo "HCF: " . $hcf . "<br>";
 
 // Question 8 - Multiplication table up to 12 x 12
 //8
-echo "Su'aasha 8:";
+echo "question 8:";
 echo "<h3>Multiplication Table (12 * 12)</h3>";
 echo "<table border='1'>"; 
 for($i=1; $i<=12; $i++){ 
