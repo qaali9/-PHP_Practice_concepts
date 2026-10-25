@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking Account and Transaction Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Banking Account Form</h1>
+    <div class="note">Simulation only: use fictional customer data. No real banking transactions are processed.</div>
+
+    <form action="process.php" method="post" enctype="multipart/form-data">
+
+        <label class="field-label" for="fullName">Customer Full Name</label>
+        <input type="text" id="fullName" name="fullName">
+
+        <label class="field-label" for="accountNumber">Account Number</label>
+        <input type="text" id="accountNumber" name="accountNumber">
+
+        <label class="field-label">Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+
+        <label class="field-label" for="accountType">Account Type</label>
+        <select id="accountType" name="accountType">
+            <option value="">-- Select Account Type --</option>
+            <option value="Savings">Savings</option>
+            <option value="Current">Current</option>
+            <option value="Business">Business</option>
+        </select>
+
+        <label class="field-label" for="openingBalance">Opening Balance ($)</label>
+        <input type="number" id="openingBalance" name="openingBalance" step="0.01">
+
+        <label class="field-label">Transaction Type</label>
+        <div class="radio-group">
+            <label><input type="radio" name="transactionType" value="Deposit"> Deposit</label>
+            <label><input type="radio" name="transactionType" value="Withdrawal"> Withdrawal</label>
+        </div>
+
+        <label class="field-label" for="transactionAmount">Transaction Amount ($)</label>
+        <input type="number" id="transactionAmount" name="transactionAmount" step="0.01">
+
+        <label class="field-label" for="duration">Account Duration (Years)</label>
+        <input type="number" id="duration" name="duration" step="1">
+
+        <label class="field-label" for="document">Identification Document</label>
+        <input type="file" id="document" name="document">
+
+        <div class="buttons">
+            <input type="submit" value="Process Transaction">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+</body>
+</html>
